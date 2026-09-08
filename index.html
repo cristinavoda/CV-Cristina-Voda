@@ -35,30 +35,41 @@
 
 
     <header class="cv-header">
+<div class="header-main">
 
-      <div class="header-main">
+  <p class="eyebrow">
+    FULL STACK DEVELOPER
+  </p>
 
-        <p class="eyebrow">
-          FULL STACK DEVELOPER
-        </p>
+  <h1>
+    CRISTINA VODA
+  </h1>
 
-        <h1>
-          CRISTINA VODA
-        </h1>
+  <p class="headline"
+     data-es="Web Applications · APIs · Automation · AI"
+     data-en="Web Applications · APIs · Automation · AI">
+    Web Applications · APIs · Automation · AI
+  </p>
 
-        <p class="headline"
-           data-es="Web Applications · APIs · Automation · AI"
-           data-en="Web Applications · APIs · Automation · AI">
-          Web Applications · APIs · Automation · AI
-        </p>
+ <div class="cv-online-link">
+  <span>CV online:</span>
+  <a
+    href="https://cv-cristina.netlify.app/"
+    target="_blank"
+    rel="noopener"
+  >
+    https://cv-cristina.netlify.app/
+  </a>
+</div>
 
-        <p class="contact-line"
-           data-es="Lleida, España · Disponible para trabajo remoto / híbrido / presencial · Proyectos"
-           data-en="Lleida, Spain · Available for remote / hybrid / on-site work · Projects">
-          Lleida, España · Disponible para trabajo remoto / híbrido / presencial · Proyectos
-        </p>
+  <p class="contact-line"
+     data-es="Lleida, España · Disponible para trabajo remoto / híbrido / presencial · Proyectos"
+     data-en="Lleida, Spain · Available for remote / hybrid / on-site work · Projects">
+    Lleida, España · Disponible para trabajo remoto / híbrido / presencial · Proyectos
+  </p>
 
-      </div>
+</div>
+
 
       <div class="avatar">
 
@@ -1169,7 +1180,33 @@ a {
 }
 
 
+.cv-online-link {
+  margin-top: 8px;
+}
 
+.cv-online-link a {
+  display: inline-block;
+
+  color: #b87333;
+  text-decoration: none;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  border-bottom: 1px solid rgba(184, 115, 51, 0.4);
+
+  padding-bottom: 3px;
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cv-online-link a:hover {
+  color: #d08a4a;
+  border-color: #b87333;
+}
 .avatar-wrapper {
   flex: 0 0 145px;
 }
