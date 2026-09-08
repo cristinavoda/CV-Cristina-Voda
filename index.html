@@ -927,6 +927,18 @@
          cristinavoda483@gmail.com
         </a>
 
+        <div class="footer-portfolio">
+        <a
+          href="https://portfolio-developer-web-cristinavoda.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Portfolio
+        </a>
+
+      </div>
+
+
+
         <a
           href="https://www.linkedin.com/in/cristina-voda-7077a628a/"
           target="_blank"
@@ -941,14 +953,7 @@
           GitHub
         </a>
 
-        <a
-          href="https://portfolio-developer-web-cristinavoda.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer">
-          Portfolio
-        </a>
-
-      </div>
+      
 
     </footer>
 
@@ -1048,7 +1053,8 @@ body {
   background: var(--ivory);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 700;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -1355,44 +1361,6 @@ a {
 }
 
 
-
-
-.project-links {
-  grid-column: 2;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
-
-  margin-top: 16px;
-}
-
-.project-links a {
-  position: relative;
-
-  color: var(--copper-dark);
-
-  font-size: 0.76rem;
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
-}
-
-.project-links a::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -4px;
-
-  height: 1px;
-
-  background: var(--copper);
-}
-
-
-
 .project-featured {
   padding-left: 0;
 }
@@ -1420,7 +1388,7 @@ a {
 
   padding: 8px 0;
 
-  color: #b87333; /* cobre */
+  color: #b87333; 
   text-decoration: none;
 
   font-family: "Inter", sans-serif;
@@ -1434,7 +1402,11 @@ a {
     border-color 0.25s ease,
     gap 0.25s ease;
 }
-
+.footer-portfolio{
+    
+    color: #b87333;
+    border-bottom: 1px solid rgba(184, 115, 51, 0.35); 
+}
 .project-link a small {
   color: #888;
   font-size: 0.72rem;
@@ -1457,6 +1429,15 @@ a {
 }
 
 @media (max-width: 780px) {
+.avatar {
+  width: 100px;
+  height: 175px;
+
+  object-fit: cover;
+
+ 
+  border-radius: 0;
+}
 
   .project {
     grid-template-columns: 40px 1fr;
@@ -1476,7 +1457,7 @@ a {
   }
 
   .project-type {
-    font-size: 0.62rem;
+    font-size: 1rem;
     letter-spacing: 0.12em;
   }
 
@@ -1485,144 +1466,14 @@ a {
   }
 
   .project-title {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
   }
 
   .project > p:not(.project-title) {
-    font-size: 0.86rem;
+    font-size: 1rem;
     line-height: 1.65;
-  }
-}
-
-
-
-
-.experience {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 35px;
-}
-
-.experience-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-  color: var(--muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.experience h3 {
-  color: var(--black);
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 400;
-}
-
-.experience ul {
-  margin-top: 18px;
-  padding-left: 18px;
-
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
-.experience li {
-  margin-bottom: 5px;
-}
-
-
-
-.experience {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  column-gap: 35px;
-
-  width: 100%;
-}
-
-
-
-
-.experience-meta {
-  grid-column: 1;
-
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-
-  color: var(--muted);
-
-  font-size: 0.72rem;
-  line-height: 1.4;
-
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-
-
-.experience h3 {
-  grid-column: 2;
-
-  margin: 0;
-
-  color: var(--black);
-
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 400;
-  line-height: 1.15;
-
-  letter-spacing: -0.02em;
-}
-
-
-.experience > p {
-  grid-column: 2;
-
-  max-width: 720px;
-
-  margin: 15px 0 0;
-
-  color: var(--muted);
-
-  font-size: 0.88rem;
-  line-height: 1.7;
-}
-
-
-
-.experience > p + p {
-  margin-top: 10px;
-}
-
-
-
-
-.experience ul {
-  grid-column: 2;
-
-  margin: 18px 0 0;
-  padding-left: 18px;
-
-  color: var(--muted);
-
-  font-size: 0.88rem;
-  line-height: 1.7;
-}
-
-.experience li {
-  margin-bottom: 5px;
-}
-
-
-
-@media (max-width: 780px) {
-
-  .experience {
+  }}
+ .experience {
     grid-template-columns: 1fr;
     row-gap: 8px;
   }
@@ -1651,11 +1502,6 @@ a {
   .experience > p + p {
     margin-top: 8px;
   }
-
-}
-
-
-
 
 .education {
   display: grid;
