@@ -298,7 +298,7 @@
 
   <p data-es="Aplicación web Full Stack desarrollada con React y Python/FastAPI, con una API REST conectada a MySQL, para centralizar la gestión de productos, stock, ventas, clientes y pedidos desde una interfaz de TPV moderna y funcional." data-en="Full Stack web application built with React and Python/FastAPI, featuring a REST API connected to MySQL, to centralise product, inventory, sales, customer and order management through a modern and functional POS interface."> Aplicación web <strong>Full Stack</strong> desarrollada con <strong>React</strong> y <strong>Python/FastAPI</strong>, con una API REST conectada a <strong>MySQL</strong>, para centralizar la gestión de productos, stock, ventas, clientes y pedidos desde una interfaz de TPV moderna y funcional. </p> <p data-es="El backend implementa una arquitectura basada en API REST, gestión de datos con SQLAlchemy y conexión a base de datos MySQL, trabajando con Python, FastAPI y MySQL Workbench para el desarrollo y administración del entorno de datos." data-en="The backend follows a REST API architecture, using SQLAlchemy for data management and MySQL as the database, with Python, FastAPI and MySQL Workbench used throughout the development and database management workflow."> El backend implementa una arquitectura basada en <strong>API REST</strong>, gestión de datos con <strong>SQLAlchemy</strong> y conexión a base de datos <strong>MySQL</strong>, trabajando con <strong>Python</strong>, <strong>FastAPI</strong> y <strong>MySQL Workbench</strong> para el desarrollo y administración del entorno de datos. </p>
 
-  <p
+  <p 
     data-es="Integra Pilot, un asistente inteligente orientado a detectar posibles incidencias, anticipar necesidades de stock y pedidos, y facilitar la toma de decisiones en la gestión diaria del negocio."
     data-en="Integrates Pilot, an intelligent assistant designed to detect potential issues, anticipate inventory and order needs, and support daily business decision-making.">
     Integra <strong>Pilot</strong>, un asistente inteligente orientado a
@@ -1133,7 +1133,7 @@ a {
 .cv {
   width: min(100% - 64px, var(--max-width));
   margin: 0 auto;
-  padding: 70px 50px 50px;
+  padding: 10px 10px 10px;
   
 }
 
@@ -1275,9 +1275,9 @@ a {
 .cv-section {
   display: grid;
   grid-template-columns: 190px 1fr;
-  gap: 55px;
+  gap: 5px;
 
-  padding: 48px 0;
+  padding: 38px 0;
 
   border-bottom: 1px solid var(--line);
 }
@@ -1358,7 +1358,7 @@ a {
 }
 
 .project {
-  display: grid;
+  display: block;
   grid-template-columns: 55px 1fr;
   column-gap: 25px;
 
@@ -1516,7 +1516,7 @@ a {
 
 @media (max-width: 780px) {
 .avatar {
-  width: 100px;
+  width: 150px;
   height: 175px;
 
   object-fit: cover;
@@ -1556,7 +1556,7 @@ a {
   }
 
   .project > p:not(.project-title) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.65;
   }}
  .experience {
@@ -1711,7 +1711,16 @@ a {
   .skills {
     gap: 25px 30px;
   }
+  .project > p:not(.project-title) {
+    font-size: 1.2rem;
+    line-height: 1.65; 
+    text-align:left;
+  margin-left: 0;
+  margin-right: 0;
+  }
+  
 
+  
 }
 
 
@@ -1808,7 +1817,8 @@ a {
   
 
   .project {
-    grid-template-columns: 35px 1fr;
+    display: block;
+    grid-template-columns: 55px 1fr;
     gap: 12px;
 
     margin-bottom: 32px;
@@ -1823,7 +1833,13 @@ a {
     font-size: 1.65rem;
   }
 
-
+.project > p:not(.project-title) {
+    font-size: 1.2rem;
+    line-height: 1.65; 
+    text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  }
   
 
   .experience {
